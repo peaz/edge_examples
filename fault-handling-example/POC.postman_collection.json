@@ -1,0 +1,63 @@
+{
+	"info": {
+		"name": "POC",
+		"_postman_id": "b4ef9b7b-1814-4b3b-bb19-17202a4379ed",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fault Handling Example",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "true",
+						"disabled": true
+					},
+					{
+						"key": "X-My-Error",
+						"value": "true",
+						"disabled": true
+					},
+					{
+						"key": "X-My-Other-Error",
+						"value": "true"
+					},
+					{
+						"key": "X-Uncaught-Error",
+						"value": "true",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"country\":\"sg\"\n}"
+				},
+				"url": {
+					"raw": "http://apac-demo1-test.apigee.net/fault-handling/get?apikey=asdad",
+					"protocol": "http",
+					"host": [
+						"apac-demo1-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"fault-handling",
+						"get"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "asdad",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
