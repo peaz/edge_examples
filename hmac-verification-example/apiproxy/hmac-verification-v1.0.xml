@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="hmac-verification-v1.0">
+    <Basepaths>/v1/hmac-verification</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1517811356448</CreatedAt>
+    <CreatedBy>kenyc@google.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>mock</DisplayName>
+    <LastModifiedAt>1517834066658</LastModifiedAt>
+    <LastModifiedBy>kenyc@google.com</LastModifiedBy>
+    <Policies>
+        <Policy>Invalid-Signature</Policy>
+        <Policy>OAuth-v20</Policy>
+        <Policy>Return-Mock</Policy>
+        <Policy>Verify-API-Key-1</Policy>
+        <Policy>hmac-verifier</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://enc-base64-min.js</Resource>
+        <Resource>jsc://hmac-256-verifier.js</Resource>
+        <Resource>jsc://hmac-sha256.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+    <validate>false</validate>
+</APIProxy>
